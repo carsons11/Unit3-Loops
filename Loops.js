@@ -12,12 +12,17 @@
 // Use a for loop and .push() to build the array one number at a time.
 function getNumbersInRange(start, end) {
   // TODO: your code here
-
+  result = []
+  let highest = Math.max(start,end);
+  for (let i = start; i <= highest; i++){
+    result.push (i)
+  }
+  return result
 }
 
 console.log(getNumbersInRange(1, 5));  // [1, 2, 3, 4, 5]
-console.log(getNumbersInRange(10, 10)); // [10]
-console.log(getNumbersInRange(3, 8));  // [3, 4, 5, 6, 7, 8]
+console.log(getNumbersInRange(10, 10));  
+console.log(getNumbersInRange(3, 8));
 
 
 // ---------- Problem 2: Sum a Range ----------
@@ -25,7 +30,11 @@ console.log(getNumbersInRange(3, 8));  // [3, 4, 5, 6, 7, 8]
 // Use the accumulator pattern: let total = 0; total += i; each pass.
 function sumRange(start, end) {
   // TODO: your code here
-
+  total = 0; 
+  for (let i = start; i <= end; i++){
+    total += i
+  }
+  return total 
 }
 
 console.log(sumRange(1, 5));   // 15
@@ -38,6 +47,11 @@ console.log(sumRange(4, 4));   // 4
 // Use a while loop, not a for loop.
 function countdown(n) {
   // TODO: your code here
+  while (n > 0) {
+  console.log("Countdown: " + n);
+  n--; // subtract 1 each time
+}
+console.log("Blast off!");
 
 }
 
