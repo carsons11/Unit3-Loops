@@ -48,16 +48,16 @@ console.log(sumRange(4, 4));   // 4
 function countdown(n) {
   // TODO: your code here
   while (n > 0) {
-  console.log("Countdown: " + n);
-  n--; // subtract 1 each time
+  console.log("Countdown: " + n);  
+  n--;
+  
+   // subtract 1 each time
 }
 console.log("Blast off!");
-
 }
-
-console.log(countdown(5)); // [5, 4, 3, 2, 1]
-console.log(countdown(1)); // [1]
-console.log(countdown(8)); // [8, 7, 6, 5, 4, 3, 2, 1]
+countdown(5); // [5, 4, 3, 2, 1]
+countdown(1); // [1]
+countdown(8); // [8, 7, 6, 5, 4, 3, 2, 1,]
 
 
 // ---------- Problem 4: Count the Vowels ----------
@@ -67,7 +67,15 @@ console.log(countdown(8)); // [8, 7, 6, 5, 4, 3, 2, 1]
 // str[i] or str.charAt(i).
 function countVowels(str) {
   // TODO: your code here
-
+  x = str.length
+  y = 0
+    while (x>=0){
+      if (String(str[x]) === "a" || String(str[x]) === "e" || String(str[x]) === "i" || String(str[x]) === "o" || String(str[x]) === "u" ){
+        y++;
+      }
+      x--;
+    }
+  return y
 }
 
 console.log(countVowels("hello"));      // 2
@@ -83,7 +91,12 @@ console.log(countVowels("aeiou"));      // 5
 // build each row as its own string before adding it to the result.
 function multiplicationTable(n) {
   // TODO: your code here
-
+  num = 0
+  integer = 0
+  add = 1
+  while (num<n)
+    integer
+    num ++
 }
 
 console.log(multiplicationTable(3));
