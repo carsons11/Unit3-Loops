@@ -40,7 +40,7 @@ countdown(5); // [5, 4, 3, 2, 1]
 countdown(1); // [1]
 countdown(8); // [8, 7, 6, 5, 4, 3, 2, 1,] */
 
-function countVowels(str) {
+/* function countVowels(str) {
   // TODO: your code here
   x = str.length
   y = 0
@@ -56,4 +56,34 @@ function countVowels(str) {
 console.log(countVowels("hello"));      // 2
 console.log(countVowels("javascript")); // 3
 console.log(countVowels("xyz"));        // 0
-console.log(countVowels("aeiou"));      // 5
+console.log(countVowels("aeiou"));      // 5 */
+
+function multiplicationTable(n) {
+  // TODO: your code here
+  list = []
+  for (let i = 1; i <  n+1 ; i++){
+      for (let h = 1; h< n+1; h++){
+        list.push(i*h)
+      }
+      list.push("/n")
+    }
+  return list
+  }
+
+console.log(multiplicationTable(3));
+// "1 2 3\n2 4 6\n3 6 9"
+console.log(multiplicationTable(5));
+
+
+/* function multiplicationTable(n) {
+  // TODO: your code here
+  list = []
+  for (i = 1; i < n+1; i++){
+    for (h=1; h < i + 1; i++){
+      list.push(i*h)
+    }
+  }
+}
+console.log(multiplicationTable(3));
+// "1 2 3\n2 4 6\n3 6 9"
+console.log(multiplicationTable(5)); */
