@@ -91,13 +91,10 @@ console.log(countVowels("aeiou"));      // 5
 // build each row as its own string before adding it to the result.
 function multiplicationTable(n) {
   // TODO: your code here
-  num = 0
-  integer = 0
-  add = 1
-  while (num<n)
-    integer
-    num ++
-}
+  for (let i = 1; i < n+1; i++){
+
+    }
+  }
 
 console.log(multiplicationTable(3));
 // "1 2 3\n2 4 6\n3 6 9"
@@ -113,7 +110,7 @@ console.log(multiplicationTable(5));
 // when a divisor is found works well here.
 function primesUnder(limit) {
   // TODO: your code here
-
+  
 }
 
 console.log(primesUnder(10)); // [2, 3, 5, 7]
