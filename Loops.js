@@ -91,14 +91,20 @@ console.log(countVowels("aeiou"));      // 5
 // build each row as its own string before adding it to the result.
 function multiplicationTable(n) {
   // TODO: your code here
-  for (let i = 1; i < n+1; i++){
-
+  list = []
+  for (let i = 1; i <  n+1 ; i++){
+      for (let h = 1; h< n+1; h++){
+        list.push(i*h)
+      }
+      list.push("/n")
     }
+  return list
   }
 
 console.log(multiplicationTable(3));
 // "1 2 3\n2 4 6\n3 6 9"
 console.log(multiplicationTable(5));
+
 
 
 // ---------- Problem 6: Primes Under a Limit ----------
