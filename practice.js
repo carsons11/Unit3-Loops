@@ -58,7 +58,7 @@ console.log(countVowels("javascript")); // 3
 console.log(countVowels("xyz"));        // 0
 console.log(countVowels("aeiou"));      // 5 */
 
-function multiplicationTable(n) {
+/* function multiplicationTable(n) {
   // TODO: your code here
   list = []
   for (let i = 1; i <  n+1 ; i++){
@@ -72,18 +72,27 @@ function multiplicationTable(n) {
 
 console.log(multiplicationTable(3));
 // "1 2 3\n2 4 6\n3 6 9"
-console.log(multiplicationTable(5));
+console.log(multiplicationTable(5)); */
 
-
-/* function multiplicationTable(n) {
-  // TODO: your code here
-  list = []
-  for (i = 1; i < n+1; i++){
-    for (h=1; h < i + 1; i++){
-      list.push(i*h)
+function bowlingCalc(aa, ab, ba, bb, ca, cb, da, db, ea, eb, fa, fb, ga, gb, ha, hb, ia, ib, ja, jb){
+  score = 0
+  repeat = [aa, ab, ba, bb, ca, cb, da, db, ea, eb, fa, fb, ga, gb, ha, hb, ia, ib, ja, jb]
+  for (let i= 0; i <= repeat.length; i+=2 ){
+    if (repeat[i] + repeat[i+1]===10){
+      score += repeat[i] + repeat[i+2]
+    }
+    else {
+      score += repeat[i] + repeat[i+1]
     }
   }
+  if (repeat[18]===10){
+    score += 20
+  }
+  else if (repeat[18]+repeat[19]===10){
+    score += 10
+  }  
+  return score
 }
-console.log(multiplicationTable(3));
-// "1 2 3\n2 4 6\n3 6 9"
-console.log(multiplicationTable(5)); */
+
+console.log(bowlingCalc(10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0))
+
