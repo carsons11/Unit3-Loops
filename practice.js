@@ -74,7 +74,7 @@ console.log(multiplicationTable(3));
 // "1 2 3\n2 4 6\n3 6 9"
 console.log(multiplicationTable(5)); */
 
-function bowlingCalc(aa, ab, ba, bb, ca, cb, da, db, ea, eb, fa, fb, ga, gb, ha, hb, ia, ib, ja, jb){
+/* function bowlingCalc(aa, ab, ba, bb, ca, cb, da, db, ea, eb, fa, fb, ga, gb, ha, hb, ia, ib, ja, jb){
   score = 0
   repeat = [aa, ab, ba, bb, ca, cb, da, db, ea, eb, fa, fb, ga, gb, ha, hb, ia, ib, ja, jb]
   for (let i= 0; i <= repeat.length; i+=2 ){
@@ -94,5 +94,19 @@ function bowlingCalc(aa, ab, ba, bb, ca, cb, da, db, ea, eb, fa, fb, ga, gb, ha,
   return score
 }
 
-console.log(bowlingCalc(10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0))
+console.log(bowlingCalc(10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0)) */
 
+function foodline(N,M,x){
+  track = []
+  for (let h=1; h<M;h++){
+    z = parseInt(Math.min(...x)+1)
+    track.push(Math.min(...x))
+    x.shift((Math.min(...x)))
+    x.push(z)
+  }
+  track.push((Math.min(...x)))
+  for (let g = 0; g < track.length; g++){
+    console.log(track[g])
+  }
+}
+foodline(5,3,[2,2,3,3,3])
