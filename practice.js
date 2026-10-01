@@ -74,15 +74,14 @@ console.log(multiplicationTable(3));
 // "1 2 3\n2 4 6\n3 6 9"
 console.log(multiplicationTable(5)); */
 
-/* function bowlingCalc(aa, ab, ba, bb, ca, cb, da, db, ea, eb, fa, fb, ga, gb, ha, hb, ia, ib, ja, jb){
+function bowlingCalc(repeat){
   score = 0
-  repeat = [aa, ab, ba, bb, ca, cb, da, db, ea, eb, fa, fb, ga, gb, ha, hb, ia, ib, ja, jb]
   for (let i= 0; i <= repeat.length; i+=2 ){
     if (repeat[i] + repeat[i+1]===10){
-      score += repeat[i] + repeat[i+2]
+      score += parseInt(repeat[i]) + parseInt(repeat[i+2])
     }
     else {
-      score += repeat[i] + repeat[i+1]
+      score += parseInt(repeat[i]) + repeat[i+1]
     }
   }
   if (repeat[18]===10){
@@ -94,9 +93,10 @@ console.log(multiplicationTable(5)); */
   return score
 }
 
-console.log(bowlingCalc(10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0)) */
+console.log(bowlingCalc([10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0]))
 
-function foodline(N,M,x){
+/* function foodline(N,M,x){
+  x.sort((a,b)=> a-b)
   track = []
   for (let h=1; h<M;h++){
     z = parseInt(Math.min(...x)+1)
@@ -109,4 +109,40 @@ function foodline(N,M,x){
     console.log(track[g])
   }
 }
-foodline(5,3,[2,2,3,3,3])
+foodline(5,3,[2,2,3,3,3]) */
+
+
+/* function slotMachines(a,b,c,x){
+  count = 0
+  while (x>0){
+    if (x>0){
+      a++
+      x--
+      count++
+      if (a===35){
+        x+=30
+        a=0
+      }
+    }
+    if (x>0){
+      b++
+      x--
+      count++
+      if (b===100){
+        x+=60
+        b=0
+      }
+    }
+    if (x>0){
+      c++
+      x--
+      count++
+      if (c===10){
+        x+=9
+        c=0
+      }
+    }    
+  }
+  return `Martha plays ${count} before going broke.`
+}
+console.log(slotMachines(4,9,3,77)) */
