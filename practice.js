@@ -74,26 +74,26 @@ console.log(multiplicationTable(3));
 // "1 2 3\n2 4 6\n3 6 9"
 console.log(multiplicationTable(5)); */
 
-function bowlingCalc(repeat){
+/* function bowlingCalc(repeat){
   score = 0
-  for (let i= 0; i <= repeat.length; i+=2 ){
+  for (let i= 0; i < 17; i+=2){
     if (repeat[i] + repeat[i+1]===10){
-      score += parseInt(repeat[i]) + parseInt(repeat[i+2])
+      score += 20 + repeat[i+2]
     }
     else {
-      score += parseInt(repeat[i]) + repeat[i+1]
+      score += repeat[i] + repeat[i+1]
     }
   }
   if (repeat[18]===10){
     score += 20
   }
   else if (repeat[18]+repeat[19]===10){
-    score += 10
+    score += 10 + repeat[20]
   }  
   return score
 }
 
-console.log(bowlingCalc([10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0]))
+console.log(bowlingCalc([10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10])) */
 
 /* function foodline(N,M,x){
   x.sort((a,b)=> a-b)
@@ -146,3 +146,14 @@ foodline(5,3,[2,2,3,3,3]) */
   return `Martha plays ${count} before going broke.`
 }
 console.log(slotMachines(4,9,3,77)) */
+
+
+function alpaca (n,x){
+  list = []
+  for (i=1; i <= n; i==){
+    list.push(i)
+  }
+  
+
+}
+console.log(alpaca(6,4))
