@@ -150,10 +150,16 @@ console.log(slotMachines(4,9,3,77)) */
 
 function alpaca (n,x){
   list = []
-  for (i=1; i <= n; i==){
+  for (i=1; i <= n; i++){
     list.push(i)
   }
   
-
+  while (!z===x){
+    z=0
+    for (i=0;i<list.length;i+2){
+      list[i+1] = list[i+1] +1
+    }
+    z++
+  }
 }
 console.log(alpaca(6,4))
