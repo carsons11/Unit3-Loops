@@ -153,13 +153,28 @@ function alpaca (n,x){
   for (i=1; i <= n; i++){
     list.push(i)
   }
-  
-  while (!z===x){
+  n=false
+  while (n===false){
     z=0
-    for (i=0;i<list.length;i+2){
-      list[i+1] = list[i+1] +1
+    for (g=0;g<list.length;g++){
+      if ((list[g]+list[g+1])%2===0){
+        z++
+        
+      }
     }
-    z++
+    if((list[list.length]+list[0])%2===0){
+      z++
+    }
+    if (x===z){
+      n=true
+    }
+    if (n===false){
+      list.push(list[0]+1)
+      list.push(list[1])
+      list.shift()
+      list.shift()
+    }
   }
+  return list
 }
 console.log(alpaca(6,4))
