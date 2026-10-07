@@ -159,7 +159,6 @@ function alpaca (n,x){
     for (g=0;g<list.length;g++){
       if ((list[g]+list[g+1])%2===0){
         z++
-        
       }
     }
     if((list[list.length]+list[0])%2===0){
@@ -177,4 +176,4 @@ function alpaca (n,x){
   }
   return list
 }
-console.log(alpaca(6,3))
+console.log(alpaca(7,1))
