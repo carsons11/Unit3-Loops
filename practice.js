@@ -176,4 +176,4 @@ function alpaca (n,x){
   }
   return list
 }
-console.log(alpaca(7,1))
+console.log(alpaca(6,4))
